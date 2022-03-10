@@ -99,7 +99,41 @@ Grazie al trattamento protettivo contro la corrosione in ambienti indoor, ogni o
     'finiture_sez3_title' => 'LAVORAZIONE<br>ARTIGIANALE<br> DEL METALLO',
     'finiture_sez3_txt' => 'scopri i nostri progetti',
 
-    
+// PROGETTI
+    'all_products' => 'Scopri tutti i nostri progetti',
+
+    'project_1_title' => '<span>model</span> PARIS SUMMER',
+    'project_1_txt' => '<span>material</span> BRASS',
+
+    'project_2_title' => '<span>model</span> ROMA FANTASIA',
+    'project_2_txt' => '<span>material</span> COPPER',
+
+    'project_3_title' => '<span>model</span> MURANO SPRING',
+    'project_3_txt' => '<span>material</span> STEEL', 
+
+    'project_4_title' => '<span>model</span> MURANO SPRING',
+    'project_4_txt' => '<span>material</span> STEEL', 
+
+    'project_5_title' => '<span>model</span> MURANO SPRING',
+    'project_5_txt' => '<span>material</span> STEEL', 
+
+    'project_6_title' => '<span>model</span> MURANO SPRING',
+    'project_6_txt' => '<span>material</span> STEEL', 
+
+    'project_7_title' => '<span>model</span> MURANO SPRING',
+    'project_7_txt' => '<span>material</span> STEEL', 
+
+    'project_8_title' => '<span>model</span> MURANO SPRING',
+    'project_8_txt' => '<span>material</span> STEEL', 
+
+    'project_9_title' => '<span>model</span> MURANO SPRING',
+    'project_9_txt' => '<span>material</span> STEEL', 
+
+    'project_10_title' => '<span>model</span> MURANO SPRING',
+    'project_10_txt' => '<span>material</span> STEEL', 
+
+    'project_11_title' => '<span>model</span> MURANO SPRING',
+    'project_11_txt' => '<span>material</span> STEEL', 
     
 
 ];

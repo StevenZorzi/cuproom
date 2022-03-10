@@ -1,0 +1,206 @@
+
+/* STILI PERSONALIZZATI */
+
+/*
+.draft, .created{ background-color: #f0a636; color:#fff; }
+.draft .fa:before, .created .fa:before{ content: "\f044" }
+.pending.confirmation{ background-color: #3db8da; color:#fff; }
+.pending.confirmation .fa:before{ content: "\f1da"; }
+.accepted{ background-color: #8cc74f; color:#fff; }
+.accepted .fa:before{ content: "\f00c"; }
+.refused { background-color: #f75d3f; color:#fff; }
+.refused .fa:before{ content: "\f00d"; }
+.processed{ background-color: #fafafa; color:#333; }
+.processed .fa:before{ content: "\f192"; }*/
+
+/* CLASSI PERSONALIZZATE */
+
+body{ position: relative; }
+.no-display{ display:none !important; }
+.text-bg{ font-size:1.2em;  }
+.btn-control { border-radius: 17px !important; }
+
+table td.max-width{ max-width: 120px; }
+div.dataTables_info { padding-top: 25px; padding-bottom: 8px; }
+
+.table>tbody>tr>td{ padding-left: 8px; padding-right: 24px; }
+
+.date.has-feedback .form-control, .time.has-feedback .form-control { padding-right: 8px; margin-left: 1px; }
+.date.has-feedback .form-control-feedback, .time.has-feedback .form-control-feedback {display:none !important;}
+.has-feedback .date .form-control{ padding-right: 8px; }
+
+
+/* SCHERMATA EDIT */
+li.tab-add{ opacity: 1 !important; }
+
+.note-editor .panel-heading{ height: auto; }
+
+input.title{ font-size: 2em !important;  height: 45px; }
+input.title-modal{ font-size: 1.5em !important;  height: 35px; }
+
+.url-slug { margin-bottom: 40px; }
+.url-slug p{  width: auto; padding:3px 10px 0 4px; padding-left:6px; width: 100%; }
+.url-slug input{ width: 40%; margin-left: 8px; }
+
+#date-created_at{ min-width: 170px; }
+
+#form-update-img-info .modal-body{ background: #f1f4f7; padding: 0; }
+#form-update-img-info .modal-body .tab-base{ margin: 0; background: #fff; }
+#form-update-img-info .modal-body .tab-content{ box-shadow: none; width: 100%; }
+#form-update-img-info .modal-body .nav-tabs{ background: rgba(0, 0, 0, 0.025); }
+
+.variant-list-item .btn-xs{ margin-top: 2px; }
+
+/* GENERAL */
+.mainnav-sm .tgl-menu-btn, .aside-in #demo-toggle-aside{ background: #ededed; }
+.navbar-top-links > li > a:hover { background-color: #f2f2f2; cursor: pointer; }
+
+#maintenance-alert i{ color: #f87359; }
+
+.bootstrap-select{ max-width: 100% !important; }
+.bootstrap-select.btn-group{ margin-left:0 !important; }
+.select_comp .dropdown-toggle{ padding: 10px 12px !important;  font-size: 18px; }
+.select_comp .dropdown-menu { top: 46px; }
+.bootstrap-select .dropdown-toggle { padding: 7.5px 12px; }
+button .dropdown-toggle{ max-width: 100%; }
+button span.filter-option{ display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.list-group-item{ cursor: move; }
+
+.modal-body .form-control{ height: auto; }
+
+.bootstrap-select span.b{ font-weight: bold; }
+address hr, .timeline-label hr{ width:80%; margin:4px 0; }
+.list-group-item.this{ background: #ddd; }
+.list-group-item .badge{ width:20px; height: 20px; padding:5px 5px; margin-top:-2px; }
+
+.panel.only-header{ margin-bottom: 0; }
+.panel.add { transition:1s; }
+.panel.add:hover { background:rgba(150,150,150,0.1); transition:1s; }
+
+td { vertical-align: middle !important; }
+.input_time{ line-height: inherit !important; }
+
+#page-title{ margin-bottom: 20px; }
+#page-title .page-header{ font-weight: 500; }
+
+/* FOOTABLE */
+.footable a i, .panel-control a{ cursor:pointer; }
+.footable a i.ion-eye{ color:#7DC400; }
+.footable a i.ion-compose{ color:#FFC634; }
+.footable a i.ion-trash-a{ color:#a94442; }
+.footable a i.fa-reply{ color:#54abd9; }
+
+
+/* DROPZONE */
+form.dropzone.files-upload{ min-height: 250px; background: url('../img/upload-files.png') 50% 50% no-repeat; background-size: auto 80%;  }
+form.dropzone.file-upload{  min-height: 180px; background: url('../img/upload-file.png') 50% 50% no-repeat; background-size: auto 80%; }
+
+form.dropzone.doc-upload{ min-height: 250px; background: url('../img/upload-document.png') 50% 50% no-repeat; background-size: auto 80%;  }
+form.dropzone.doc-upload{  min-height: 180px; background: url('../img/upload-document.png') 50% 50% no-repeat; background-size: auto 80%; }
+.dropzone-previews .dz-preview .dz-details:hover{ cursor: help; }
+.dropzone-previews .dz-preview .dz-image img:hover{ cursor: help; }
+
+.panel.single-category .panel-body{ background: #f1f4f7; }
+.panel.single-category .tab-content{ box-shadow: none; }
+.panel.macro-category{ box-shadow: none; }
+.panel.macro-category .panel-body{ padding: 0; }
+.panel.macro-category .tab-content{ box-shadow: 0 2px 0 rgba(0, 0, 0, 0.075); }
+.single-category .panel-control .cat-manage .btn{ border: 1px solid #e9e9e9; }
+.single-category .tab-base{ margin-bottom: 0; }
+
+.sub-panel{ padding-left:40px; }
+
+.tab-base .nav-tabs > li:not(.active) a{
+	color: #595e62;
+	cursor: pointer;
+}
+
+tr.del-row{
+	transition: 0.5s;
+	background: rgba(255, 0, 0, 0.2) !important;
+}
+tr.res-row{
+	transition: 0.5s;
+	background: rgba(61, 184, 218, 0.2) !important;
+}
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 992px) { 
+	input.slug{ width: 50%; }
+}
+@media only screen and (max-width: 767px) { 
+    .mainnav-sm .tgl-menu-btn { background: #2d3c4b !important; }
+
+    input.slug{ width: 40%; }
+}
+
+.panel.module{
+	min-height: 240px;
+}
+
+/* CARICAMENTO */
+/*-------------------------------------------------------------------
+    CodePen eave preloader Styles
+-------------------------------------------------------------------*/
+#preloader-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999999;
+  display: block;
+
+}
+.preloader-wave-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 60px;
+  margin: -25px 0 0 -25px;
+}
+.preloader-wave-effect:before,
+.preloader-wave-effect:after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #000;
+  -webkit-animation: preloader-wave 1.7s linear infinite;
+  animation: preloader-wave 1.7s linear infinite;
+}
+.preloader-wave-effect:after {
+  animation-delay: -0.9s;
+  -webkit-animation-delay: -0.9s;
+}
+@keyframes preloader-wave {
+  0% {
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@-webkit-keyframes preloader-wave {
+  0% {
+    -webkit-transform: scale(0, 0);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
