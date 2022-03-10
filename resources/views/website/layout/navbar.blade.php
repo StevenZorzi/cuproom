@@ -10,10 +10,10 @@
           <ul class="dropdown menu" data-dropdown-menu="data-dropdown-menu"> 
             <li><a href="{{route('website-home')}}" title="{{trans('website.meta.homepage-t')}}">Home</a></li>  
             <li><a href="{{route('website-about')}}" title="{{trans('website.meta.about-t')}}">@lang('website-text.m_about')</a></li>
-            <li><a href="{{route('website-how-we-work')}}"  title="{{trans('website.meta.team-t')}}">@lang('website-text.m_how-we-work')</a></li>
-            <li><a href="{{route('website-projects')}}"  title="@lang('website-text.m_projects')">@lang('website-text.m_projects')</a></li>
-            <li><a href="{{route('website-finishes')}}" title="{{trans('website-text.finishes')}}">@lang('website-text.finishes')</a></li> 
-            <li><a href="{{route('website-contact')}}" title="{{trans('website.meta.contacts-t')}}">@lang('website-text.m_contact')</a></li>
+            <li><a href="{{route('website-how-we-work')}}"  title="">@lang('website-text.m_how-we-work')</a></li>
+            <li><a href="{{route('website-projects')}}"  title="">@lang('website-text.m_projects')</a></li>
+            <li><a href="{{route('website-finishes')}}" title="">@lang('website-text.finishes')</a></li> 
+            <li><a href="{{route('website-contact')}}" title="">@lang('website-text.m_contact')</a></li>
           </ul>
         </div>
         <ul class="utility">

@@ -4,13 +4,13 @@
 @section('content') 
 
 <!-- Modifica di prova -- Slider -- --> 
-<ul class="home-slider home-slider4">
+<ul class="home-slider">
   <li class="home-slide"> <img class="slider-img" src="{{asset('img/website/finiture/finiture_01.jpg')}}" alt="@lang('website.altitle.c-slide-1')" />
     <div class="slider-caption slide2-cp slider-caption-high">
       <div class="row">
         <div class="inner-caption float-right text-right mt-50">
           <div class="text-center">
-            <h1 class="title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0" style="padding-right:40px">@lang('website-text.finiture_sez1_title')</h1>
+            <h1 class="title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0">@lang('website-text.finiture_sez1_title')</h1>
             <p class="wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2.5s" data-wow-offset="0">@lang('website-text.finiture_sez1_txt')</p> 
           </div> 
         </div>
@@ -21,7 +21,7 @@
 <div class="clearfix"></div>
 
 <section class="product-cover FWrap finiture-row" id="finiture">
-  <div class="row">
+  <div class="row d-flex">
     <div class="medium-6 column">
       <div class="row-10 galleryzoom"> 
 
@@ -119,7 +119,7 @@
 
       <div class="row vertical menu finiture-accordion" data-accordion-menu> 
         <ul class="menu vertical nested is-active">
-          <li>
+          <li> 
             <a class="button link-accordion" type="button" data-toggle="example-dropdown" aria-controls="example-dropdown" data-is-focus="false" data-yeti-box="example-dropdown" aria-haspopup="true" aria-expanded="false">@lang('website-text.vedi_tutte')</a> 
             <ul class="menu vertical nested galleryzoom"> 
               <div class="small-4 column item-small">
@@ -182,8 +182,7 @@
       </div>
     </div>
     <div class="medium-6 column">
-      <figure class="collecion-box"><img src="{{asset('img/website/finiture/rame.jpg')}}" title="@lang('website-text.fin-rame_00')"> 
-      </figure>
+      <div class="height-100" style="background-image: url({{asset('img/website/finiture/rame.jpg')}});"></div> 
     </div>
   </div>
 </section>

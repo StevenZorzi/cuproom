@@ -4,7 +4,8 @@
 @section('content') 
 
 <ul class="home-slider FWrap">
-  <li class="home-slide overly slide-1"> <img class="slider-img" src="{{asset('img/website/homepage/home_01.jpg')}}" alt="@lang('website.altitle.h-slide-1')" />
+  <li class="home-slide overly slide-1"> 
+    <img class="slider-img" src="{{asset('img/website/homepage/home_01.jpg')}}" alt="@lang('website.altitle.h-slide-1')" />
     <div class="slider-caption">
       <div class="row">
         <div class="inner-caption">
@@ -108,7 +109,7 @@
       <h2><span>material</span> steel</h2>
     </div>
     <div class="large-3 column link-sez">
-      <a href="{{route('website-projects')}}" title="" class="">Scopri tutti i nostri progetti</a>
+      <a href="{{route('website-products-cuproom')}}?collection=cuproom" title="@lang('website-text.collection') CUPROOM design" class="">Scopri tutti i nostri progetti</a>
     </div>
   </div>
 

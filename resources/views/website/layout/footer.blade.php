@@ -2,13 +2,13 @@
   <div class="row">
 
     <div class="small-12 medium-5 columns">
-      <div class="footer-logo small-6 medium-3">
+      <div class="footer-logo small-6 medium-4">
         <div class="text-left">
-          <img src="{{asset('img/website/logo-cuproom.png')}}" width="70" alt="Logo Celato Rito" />
+          <img src="{{asset('img/website/logo-footer.jpg')}}" width="150" alt="Logo Celato Rito" />
         </div>  
       </div>
 
-      <div class="footer-menu small-6 medium-9">
+      <div class="footer-menu small-6 medium-8">
         <h5 class="title-footer">Celato Rito S.R.L.</h5>
         <p>
           P.IVA/C.F. 04301020261
@@ -24,10 +24,11 @@
       <div class="small-6 medium-4 columns">
         <h5 class="title-footer">Brand</h5>
         <ul>
-          <li><a href="{{route('website-about')}}" title="{{trans('website.meta.about-t')}}">@lang('website-text.m_about')</a></li>
-          <li><a href="{{route('website-team')}}"  title="{{trans('website.meta.team-t')}}">@lang('website-text.m_team')</a></li>
-          <li><a href="{{route('website-finishes')}}" title="{{trans('website-text.finishes')}}">@lang('website-text.finishes')</a></li> 
-        </ul>  
+          <li><a href="{{route('website-about')}}" title="">@lang('website-text.m_about')</a></li>
+          <li><a href="{{route('website-projects')}}"  title="">@lang('website-text.m_how-we-work')</a></li> 
+            <li><a href="{{route('website-projects')}}"  title="">@lang('website-text.m_projects')</a></li>
+          <li><a href="{{route('website-finishes')}}" title="">@lang('website-text.finishes')</a></li> 
+        </ul>   
       </div>  
 
       <div class="small-6 medium-4 columns">

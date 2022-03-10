@@ -90,6 +90,8 @@ Questo materiale puro e naturale presenta una gamma unica di caratteristiche e v
 Grazie al trattamento protettivo contro la corrosione in ambienti indoor, ogni oggetto mantiene i suoi effetti cromatici senza necessità di manutenzione.',
 
 // FINITURE 
+    'vedi_tutte' => 'vedi tutte',
+    
     'finiture_sez1_title' => 'la piegatura, rettifica, tornitura, saldatura,foratura, martellatura, spazzolatura, lucidatura, brunitura...',
     'finiture_sez1_txt' => 'Mettiamo a disposizione la nostra esperienza nelle varie applicazioni e lavorazioni del metallo per sviluppare creazioni architettoniche e artistiche in rame e accogliamo con favore un coinvolgimento nei vostri progetti.',
 
