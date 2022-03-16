@@ -4,25 +4,17 @@
 @section('content') 
 
 <!-- Modifica di prova -- Slider -- --> 
-<ul class="home-slider">
-  <li class="home-slide"> <img class="slider-img" src="{{asset('img/website/finiture/finiture_01.jpg')}}" alt="@lang('website.altitle.c-slide-1')" />
-    <div class="slider-caption slide2-cp slider-caption-high">
-      <div class="row">
-        <div class="inner-caption float-right text-right mt-50">
-          <div class="text-center">
-            <h1 class="title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0">@lang('website-text.finiture_sez1_title')</h1>
-            <p class="wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2.5s" data-wow-offset="0">@lang('website-text.finiture_sez1_txt')</p> 
-          </div> 
-        </div>
-      </div>
-    </div>
-  </li>
-</ul>
-<div class="clearfix"></div>
+<div class="sez-banner">
+  <img src="{{asset('img/website/finiture/finiture_01.jpg')}}" alt="@lang('website.altitle.c-slide-1')">
+  <div class="inner" style="top: 50%; right: 10%; width: 600px; transform: translateY(-50%);">
+    <h1 class="text-white text-center title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0">@lang('website-text.finiture_sez1_title')</h1>
+    <p class="text-white wow fadeIn  text-center" data-wow-delay="1.5s" data-wow-duration="2.5s" data-wow-offset="0">@lang('website-text.finiture_sez1_txt')</p> 
+  </div>
+</div> 
 
 <section class="product-cover FWrap finiture-row" id="finiture">
   <div class="row d-flex">
-    <div class="medium-6 column">
+    <div class="medium-6 order-sm-2 column">
       <div class="row-10 galleryzoom"> 
 
         <div class="small-4 column item-small">
@@ -181,20 +173,22 @@
         </div> 
       </div>
     </div>
-    <div class="medium-6 column">
+    <div class="medium-6 order-sm-1 column">
       <div class="height-100" style="background-image: url({{asset('img/website/finiture/rame.jpg')}});"></div> 
     </div>
   </div>
 </section>
 
-<section class="product-cover FWrap galleryzoom finiture-row">
-  <div class="row">
+<section class="product-cover FWrap finiture-row">
+  <div class="row d-flex">
     <div class="medium-6 column">
+      <div class="height-100" style="background-image: url({{asset('img/website/finiture/ottone.jpg')}});"></div>
+      {{--
       <figure class="collecion-box"><img src="{{asset('img/website/finiture/ottone.jpg')}}" title="@lang('website-text.fin-ott_00')"> 
-      </figure>
+      </figure> --}}
     </div>
     <div class="medium-6 column">
-      <div class="row-10"> 
+      <div class="row-10 galleryzoom"> 
 
         <div class="small-4 column item-small">
           <div class="product">
@@ -285,9 +279,64 @@
             </figure>  
           </div>
         </div>  
-
       </div>
       <div class="clearfix"></div>
+
+      <div class="row vertical menu finiture-accordion" data-accordion-menu> 
+          <ul class="menu vertical nested is-active">
+            <li> 
+              <a class="button link-accordion" type="button" data-toggle="example-dropdown" aria-controls="example-dropdown" data-is-focus="false" data-yeti-box="example-dropdown" aria-haspopup="true" aria-expanded="false">@lang('website-text.vedi_tutte')</a> 
+              <ul class="menu vertical nested galleryzoom"> 
+                <div class="small-4 column item-small">
+                  <div class="product">
+                    <figure class="center-outer"> 
+                      <img src="{{asset('img/website/finiture/ottone_04.jpg')}}" alt="">  
+                        <figcaption>
+                        <ul class="center-inner"> 
+                          <li><a href="{{asset('img/website/finiture/ottone_04.jpg')}}" title="@lang('website-text.fin-ott_06')">
+                            <span><img src="{{asset('img/website/icons/search.png')}}" alt=""></span></a>
+                          </li> 
+                        </ul>
+                      </figcaption>
+                    </figure>  
+                  </div>
+                </div> 
+
+                <div class="small-4 column item-small">
+                  <div class="product">
+                    <figure class="center-outer"> 
+                      <img src="{{asset('img/website/finiture/ottone_05.jpg')}}" alt="">  
+                        <figcaption>
+                        <ul class="center-inner"> 
+                          <li><a href="{{asset('img/website/finiture/ottone_05.jpg')}}" title="@lang('website-text.fin-ott_06')">
+                            <span><img src="{{asset('img/website/icons/search.png')}}" alt=""></span></a>
+                          </li> 
+                        </ul>
+                      </figcaption>
+                    </figure>  
+                  </div>
+                </div> 
+
+                <div class="small-4 column item-small">
+                  <div class="product">
+                    <figure class="center-outer"> 
+                      <img src="{{asset('img/website/finiture/ottone_06.jpg')}}" alt="">  
+                        <figcaption>
+                        <ul class="center-inner"> 
+                          <li><a href="{{asset('img/website/finiture/ottone_06.jpg')}}" title="@lang('website-text.fin-ott_06')">
+                            <span><img src="{{asset('img/website/icons/search.png')}}" alt=""></span></a>
+                          </li> 
+                        </ul>
+                      </figcaption>
+                    </figure>  
+                  </div>
+                </div>  
+              </ul>
+            </li> 
+          </ul>  
+        </div>
+        <div class="clearfix"></div>
+
       <div class="mt-20 col-text">
         <h2 class="title-col">Ottone</h2>
         <p class="par-col">Lega del rame, disponibile nelle versioni liscia e martellata, con finiture: lucida, satinata e brunita.</p>
@@ -300,10 +349,10 @@
   </div>
 </section>
 
-<section class="product-cover FWrap galleryzoom finiture-row">
-  <div class="row">
-    <div class="medium-6 column">
-      <div class="row-10"> 
+<section class="product-cover FWrap finiture-row">
+  <div class="row d-flex">
+    <div class="medium-6 order-sm-2 column">
+      <div class="row-10 galleryzoom"> 
 
         <div class="small-4 column item-small">
           <div class="product">
@@ -397,36 +446,86 @@
 
       </div>
       <div class="clearfix"></div>
+
+      <div class="row vertical menu finiture-accordion" data-accordion-menu> 
+          <ul class="menu vertical nested is-active">
+            <li> 
+              <a class="button link-accordion" type="button" data-toggle="example-dropdown" aria-controls="example-dropdown" data-is-focus="false" data-yeti-box="example-dropdown" aria-haspopup="true" aria-expanded="false">@lang('website-text.vedi_tutte')</a> 
+              <ul class="menu vertical nested galleryzoom"> 
+                <div class="small-4 column item-small">
+                  <div class="product">
+                    <figure class="center-outer"> 
+                      <img src="{{asset('img/website/finiture/alluminioeacciaio_01.jpg')}}" alt="">  
+                        <figcaption>
+                        <ul class="center-inner"> 
+                          <li><a href="{{asset('img/website/finiture/alluminioeacciaio_01.jpg')}}" title="@lang('website-text.fin-all_01')">
+                            <span><img src="{{asset('img/website/icons/search.png')}}" alt=""></span></a>
+                          </li> 
+                        </ul>
+                      </figcaption>
+                    </figure>  
+                  </div>
+                </div> 
+
+                <div class="small-4 column item-small">
+                  <div class="product">
+                    <figure class="center-outer"> 
+                      <img src="{{asset('img/website/finiture/alluminioeacciaio_02.jpg')}}" alt="">  
+                        <figcaption>
+                        <ul class="center-inner"> 
+                          <li><a href="{{asset('img/website/finiture/alluminioeacciaio_02.jpg')}}" title="@lang('website-text.fin-all_02')">
+                            <span><img src="{{asset('img/website/icons/search.png')}}" alt=""></span></a>
+                          </li> 
+                        </ul>
+                      </figcaption>
+                    </figure>  
+                  </div>
+                </div> 
+
+                <div class="small-4 column item-small">
+                  <div class="product">
+                    <figure class="center-outer"> 
+                      <img src="{{asset('img/website/finiture/alluminioeacciaio_03.jpg')}}" alt="">  
+                        <figcaption>
+                        <ul class="center-inner"> 
+                          <li><a href="{{asset('img/website/finiture/alluminioeacciaio_03.jpg')}}" title="@lang('website-text.fin-all_03')">
+                            <span><img src="{{asset('img/website/icons/search.png')}}" alt=""></span></a>
+                          </li> 
+                        </ul>
+                      </figcaption>
+                    </figure>  
+                  </div>
+                </div>  
+              </ul>
+            </li> 
+          </ul>  
+        </div>
+        <div class="clearfix"></div>
+
       <div class="mt-20 col-text">
         <h2 class="title-col">Alluminio e acciaio inox</h2>
         <p class="par-col">Alluminio e acciaio inox, disponibile nelle versioni liscia e martellata, con finiture: lucida, satinata e brunita.</p>
       </div>
     </div>
-    <div class="medium-6 column">
-      <figure class="collecion-box"><img src="{{asset('img/website/finiture/alluminioeacciaio.jpg')}}" title="@lang('website-text.fin-all_00')"> 
-      </figure>
+    <div class="medium-6 order-sm-1 column">
+      {{--
+      <figure class="collecion-box">
+        <img src="{{asset('img/website/finiture/alluminioeacciaio.jpg')}}" title="@lang('website-text.fin-all_00')"> 
+      </figure> --}}
+      <div class="height-100" style="background-image: url({{asset('img/website/finiture/alluminioeacciaio.jpg')}});"></div>
     </div>
   </div>
 </section>
 
 
 <!-- Modifica di prova -- Slider -- --> 
-<ul class="home-slider home-slider4">
-  <li class="home-slide"> <img class="slider-img" src="{{asset('img/website/finiture/finiture_02.jpg')}}" alt="@lang('website-text.finiture_sez2_title')" />
-    <div class="slider-caption slide2-cp slider-caption-high">
-      <div class="row">
-        <div class="inner-caption float-left text-right mt-50">
-          <div class="text-center">
-            <h1 class="title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0" style="padding-right:40px">@lang('website-text.finiture_sez2_title')</h1>
-            <div class="wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2.5s" data-wow-offset="0" style="padding-right:40px">
-              <p href="#gallery" class="internal shop-now">@lang('website-text.finiture_sez2_txt')</p>  
-            </div>
-          </div> 
-        </div>
-      </div>
-    </div>
-  </li>
-</ul>
+<div class="sez-banner FWrap">
+  <img src="{{asset('img/website/finiture/finiture_02.jpg')}}" alt="@lang('website-text.finiture_sez2_title')">
+  <div class="inner" style="top: 15%; width: 400px; left: 20%;">
+    <h1 class="text-white text-center title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0">@lang('website-text.finiture_sez2_title')</h1>
+    <p class="text-white wow fadeIn  text-center" data-wow-delay="1.5s" data-wow-duration="2.5s" data-wow-offset="0">@lang('website-text.finiture_sez2_txt')</p> 
+  </div>
+</div>  
 
 
 <section class="product-cover galleryzoom FWrap">
@@ -606,24 +705,17 @@
   </div> 
 </section>
 <!-- fine finiture -->
-
-<!-- Modifica di prova -- Slider -- --> 
-<ul class="home-slider home-slider4">
-  <li class="home-slide"> <img class="slider-img" src="{{asset('img/website/finiture/finiture_03.jpg')}}" alt="@lang('website-text.finiture_sez3_title')" />
-    <div class="slider-caption slide2-cp slider-caption-high">
-      <div class="row">
-        <div class="inner-caption float-left text-right mt-50">
-          <div class="text-center">
-            <h1 class="title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0" style="padding-right:40px">@lang('website-text.finiture_sez3_title')</h1>
-            <div class="wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2.5s" data-wow-offset="0" style="padding-right:40px">
-              <a href="{{route('website-projects')}}" class="button-type-1 white">@lang('website-text.finiture_sez3_txt')</a>  
-            </div>
-          </div> 
-        </div>
-      </div>
+ 
+<div class="sez-banner FWrap">
+  <img src="{{asset('img/website/finiture/finiture_03.jpg')}}" alt="@lang('website-text.finiture_sez3_title')">
+  <div class="inner" style="top: 50%; left: 20%; width: 600px; transform: translateY(-50%);">
+    <h1 class="text-white text-center title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0">@lang('website-text.finiture_sez3_title')</h1> 
+    <div class="text-center mt-50 wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2.5s" data-wow-offset="0">
+      <a href="{{route('website-projects')}}" class="button-type-1 white">@lang('website-text.finiture_sez3_txt')</a>  
     </div>
-  </li>
-</ul>
+  </div>
+</div>  
+
 
 
 @stop

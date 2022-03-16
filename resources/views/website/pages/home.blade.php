@@ -3,21 +3,16 @@
 
 @section('content') 
 
-<ul class="home-slider FWrap">
-  <li class="home-slide overly slide-1"> 
-    <img class="slider-img" src="{{asset('img/website/homepage/home_01.jpg')}}" alt="@lang('website.altitle.h-slide-1')" />
-    <div class="slider-caption">
-      <div class="row">
-        <div class="inner-caption">
-          <h1 class="text-center wow fadeInDown" data-wow-delay="1s" data-wow-duration="1.6s" data-wow-offset="0">@lang('website-text.home_sez_1_title')</h1> 
-          <div class="text-center wow fadeIn" data-wow-delay="1.9s" data-wow-duration="2s" data-wow-offset="0">
-            <a href="{{route('website-projects')}}" class="button-type-1 white">@lang('website-text.home_sez_1_txt')</a> 
-          </div>
-        </div>
-      </div>
+ 
+<div class="sez-banner FWrap">
+  <img src="{{asset('img/website/homepage/home_01.jpg')}}"  alt="@lang('website.altitle.h-slide-1')">
+  <div class="inner" style="bottom: 20%; left: 15%; width: 600px;">
+    <h1 class="text-white text-center title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0">@lang('website-text.home_sez_1_title')</h1> 
+     <div class="text-center wow fadeIn" data-wow-delay="1.9s" data-wow-duration="2s" data-wow-offset="0">
+      <a href="{{route('website-projects')}}" class="button-type-1 white">@lang('website-text.home_sez_1_txt')</a> 
     </div>
-  </li>
-</ul> 
+  </div>
+</div>  
 
 <!-- INTRO SERVIZI -->
 <div class="about FWrap">
@@ -61,20 +56,15 @@
   </div>
 </div>  
 
-<ul class="home-slider FWrap home-slider4"> 
-  <li class="home-slide overly slide-1"> <img class="slider-img" src="{{asset('img/website/homepage/home_03.jpg')}}" alt="@lang('website.altitle.h-slide-1')" />
-    <div class="slider-caption">
-      <div class="row">
-        <div class="inner-caption">
-          <h1 class="text-center wow fadeInDown" data-wow-delay="1s" data-wow-duration="1.6s" data-wow-offset="0">@lang('website-text.home_sez_2_title')</h1> 
-          <div class="text-center wow fadeIn" data-wow-delay="1.9s" data-wow-duration="2s" data-wow-offset="0">
-            <a href="{{route('website-about')}}" class="button-type-1 white">@lang('website-text.home_sez_2_txt')</a> 
-          </div>
-        </div>
-      </div>
+<div class="sez-banner FWrap">
+  <img src="{{asset('img/website/homepage/home_03.jpg')}}"  alt="@lang('website.altitle.h-slide-1')">
+  <div class="inner" style="top: 30%; left: 15%; width: 600px;">
+    <h1 class="text-white text-center title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0">@lang('website-text.home_sez_2_title')</h1> 
+    <div class="text-center wow fadeIn" data-wow-delay="1.9s" data-wow-duration="2s" data-wow-offset="0">
+      <a href="{{route('website-about')}}" class="button-type-1 white">@lang('website-text.home_sez_2_txt')</a> 
     </div>
-  </li>
-</ul> 
+  </div>
+</div>     
 
 <section class="sez-custom-1 pt-30 pb-30 FWrap bg-grey mt-50">
   <div class="row align-items-center"> 
@@ -126,22 +116,17 @@
       <figure><img src="{{asset('img/website/homepage/home_05_D.jpg')}}" alt="" /></figure>
     </div>
   </div>
-</section>
+</section> 
 
-<ul class="home-slider FWrap home-slider4"> 
-  <li class="home-slide overly slide-1"> <img class="slider-img" src="{{asset('img/website/homepage/home_06.jpg')}}" alt="@lang('website-text.home_sez_4_title')" />
-    <div class="slider-caption">
-      <div class="row">
-        <div class="inner-caption">
-          <h1 class="text-center wow fadeInDown" data-wow-delay="1s" data-wow-duration="1.6s" data-wow-offset="0">@lang('website-text.home_sez_4_title')</h1> 
-          <div class="text-center wow fadeIn" data-wow-delay="1.9s" data-wow-duration="2s" data-wow-offset="0">
-            <a href="{{route('website-how-we-work')}}" class="button-type-1 white">@lang('website-text.home_sez_4_txt')</a> 
-          </div>
-        </div>
-      </div>
+<div class="sez-banner FWrap">
+  <img src="{{asset('img/website/homepage/home_06.jpg')}}"  alt="@lang('website-text.home_sez_4_title')">
+  <div class="inner" style="bottom: 22%; left: 5%; width: 600px;">
+    <h1 class="text-white text-center title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0">@lang('website-text.home_sez_4_title')</h1> 
+    <div class="text-center wow fadeIn" data-wow-delay="1.9s" data-wow-duration="2s" data-wow-offset="0">
+      <a href="{{route('website-about')}}" class="button-type-1 white">@lang('website-text.home_sez_4_txt')</a> 
     </div>
-  </li>
-</ul> 
+  </div>
+</div>     
 
 @stop
      

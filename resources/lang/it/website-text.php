@@ -8,6 +8,7 @@ return [
     
     'collection' => 'Collezione',
     'cuproom_collection' => 'Cuproom Design',  
+    'm_gest_dati' => 'Gestione dati',
 
     //MENU
     'm_brand' => 'Il brand',
@@ -47,7 +48,7 @@ Questi sono i focus della filosofia che guidano Cuproom, attraverso un team di p
     'home_sez_4_txt' => 'scopri COME LAVORIAMO',
 
 // CHI SIAMO
-    'about_sez1_title' => '"LA VERA SCOPERTA NON CONSISTE NEL TROVARE NUOVI TERRITORI, MA NEL VEDERLI CON NUOVI OCCHI."',
+    'about_sez1_title' => '"LA VERA<br> SCOPERTA NON<br> CONSISTE NEL<br> TROVARE NUOVI<br> TERRITORI, MA<br> NEL VEDERLI<br> CON NUOVI<br> OCCHI."',
     'about_sez1_txt' => 'M.Proust',
 
     'about_sez2_title' => 'Una tradizione<br> antichissima',
@@ -92,7 +93,7 @@ Grazie al trattamento protettivo contro la corrosione in ambienti indoor, ogni o
 // FINITURE 
     'vedi_tutte' => 'vedi tutte',
     
-    'finiture_sez1_title' => 'la piegatura, rettifica, tornitura, saldatura,foratura, martellatura, spazzolatura, lucidatura, brunitura...',
+    'finiture_sez1_title' => 'la piegatura,<br> rettifica, tornitura,<br> saldatura, foratura,<br> martellatura,<br> spazzolatura,<br> lucidatura,<br> brunitura...',
     'finiture_sez1_txt' => 'Mettiamo a disposizione la nostra esperienza nelle varie applicazioni e lavorazioni del metallo per sviluppare creazioni architettoniche e artistiche in rame e accogliamo con favore un coinvolgimento nei vostri progetti.',
 
     'finiture_sez2_title' => 'LAVORAZIONI',

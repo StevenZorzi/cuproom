@@ -2,11 +2,9 @@
 
 
 @section('content') 
-
-<ul class="home-slider FWrap home-slider4">
-  <li class="home-slide overly slide-1"> <img class="slider-img" src="{{asset('img/website/projects/home_01.jpg')}}" alt="" /> 
-  </li>
-</ul> 
+<div class="sez-banner FWrap">
+  <img src="{{asset('img/website/projects/home_01.jpg')}}" > 
+</div>  
 
 @for ($i = 1; $i < 12; $i++)
   <section class="FWrap sez-puzzle-custom mt-50">
@@ -21,8 +19,8 @@
         <a  href="{{route('website-products-cuproom')}}?collection=cuproom" title="@lang('website-text.collection') CUPROOM design" class="">@lang('website-text.all_products')</a>
       </div>
     </div> 
-    <div class="row galleryzoom">
-      <div class="medium-6 column">
+    <div class="row d-flex galleryzoom">
+      <div class="medium-6 <?=($i%2==0 ? 'order-medium-2' : '')?> column">
         <div class="product">
           <figure class="center-outer">
             <img src="{{asset('img/website/projects/progetti_'.($i<10 ? '0'.$i : $i).'.jpg')}}" alt="" /> 
@@ -36,7 +34,7 @@
           </figure>
         </div>
       </div>
-      <div class="small-6 medium-3 column col-center">
+      <div class="small-6 medium-3 column <?=($i%2==0 ? 'order-medium-1' : '')?> col-center">
         <div class="product">
           <figure>
             <img src="{{asset('img/website/projects/progetti_'.($i<10 ? '0'.$i : $i).'_A.jpg')}}" alt="" />
@@ -62,7 +60,7 @@
           </figure> 
         </div>
       </div>
-      <div class="small-6 medium-3 column col-dx">
+      <div class="small-6 medium-3 column <?=($i%2==0 ? 'order-medium-1' : '')?> col-dx">
         <div class="product">
           <figure>
             <img src="{{asset('img/website/projects/progetti_'.($i<10 ? '0'.$i : $i).'_C.jpg')}}" alt="" />

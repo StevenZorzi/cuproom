@@ -3,21 +3,13 @@
 
 @section('content') 
 
-<!-- Modifica di prova -- Slider -- --> 
-<ul class="home-slider home-slider4">
-  <li class="home-slide"> <img class="slider-img" src="{{asset('img/website/chi-siamo/chisiamo_01.jpg')}}" alt="@lang('website.altitle.c-slide-1')" />
-    <div class="slider-caption slide2-cp slider-caption-high">
-      <div class="row">
-        <div class="inner-caption float-right text-right mt-50">
-          <div class="text-center">
-            <h1 class="title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0" style="padding-right:40px">@lang('website-text.about_sez1_title')</h1>
-            <p class="wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2.5s" data-wow-offset="0">@lang('website-text.about_sez1_txt')</p> 
-          </div> 
-        </div>
-      </div>
-    </div>
-  </li>
-</ul>
+<div class="sez-banner fnt-small FWrap">
+  <img src="{{asset('img/website/chi-siamo/chisiamo_01.jpg')}}"  alt="@lang('website.altitle.c-slide-1')">
+  <div class="inner" style="top: 50%; left: 5%; width: 600px; transform: translateY(-50%);">
+    <h1 class="text-white title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0">@lang('website-text.about_sez1_title')</h1> 
+    <p class="text-white wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2.5s" data-wow-offset="0">@lang('website-text.about_sez1_txt')</p> 
+  </div>
+</div>  
 
 <div class="clearfix"></div>
 <section class="product-counter2 p0 mb-50 mt-50 FWrap">
@@ -34,27 +26,19 @@
   </div> 
 </section> 
 
-<!-- Modifica di prova -- Slider -- --> 
-<ul class="home-slider home-slider4 sez-slogan">
-  <li class="home-slide"> <img class="slider-img" src="{{asset('img/website/chi-siamo/chisiamo_03.jpg')}}" alt="@lang('website.altitle.c-slide-1')" />
-    <div class="slider-caption slide2-cp slider-caption-high">
-      <div class="row">
-        <div class="inner-caption float-right mt-50">
-          <div class="text-center">
-            <img src="{{asset('img/logo-celatorito.png')}}" width="100" class="mb-30">
-            <h2 class="title-2 p0 wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0" style="padding-right:40px">@lang('website-text.about_sez3_title')</h2>
-            <div class="p0 wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2.5s" data-wow-offset="0" style="padding-right:40px">
-              <div class="text-center p0 wow fadeIn" data-wow-delay="1.9s" data-wow-duration="2s" data-wow-offset="0">
-                <p>@lang('website-text.about_sez3_txt')</p>
-                <a href="#" class="button-type-1 white">@lang('website-text.about_sez3_link')</a> 
-              </div>
-            </div>
-          </div> 
-        </div>
-      </div>
+<div class="sez-banner fnt-small FWrap">
+  <img src="{{asset('img/website/chi-siamo/chisiamo_03.jpg')}}"  alt="@lang('website-text.about_sez5_title')">
+  <div class="inner text-center" style="top: 50%; right: 10%; width: 400px; transform: translateY(-50%);">
+    <img src="{{asset('img/logo-celatorito.png')}}" width="100" class="mb-30">
+    <h2 class="text-white title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0">@lang('website-text.about_sez3_title')</h2> 
+    <div class="text-white wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2.5s" data-wow-offset="0">
+      <p class="">@lang('website-text.about_sez3_txt')</p> 
+      <a href="{{route('website-finishes')}}" title="@lang('website-text.about_sez5_txt')" class="button-type-1 white">
+        @lang('website-text.about_sez3_link')
+      </a> 
     </div>
-  </li>
-</ul> 
+  </div>
+</div>   
 
 <section class="product-counter2 p0 mb-50 mt-50 FWrap">
   <div class="row align-items: center;"> 
@@ -70,24 +54,15 @@
   </div> 
 </section>  
 
-<!-- Modifica di prova -- Slider -- --> 
-<ul class="home-slider home-slider4 sez-slogan">
-  <li class="home-slide"> <img class="slider-img" src="{{asset('img/website/chi-siamo/chisiamo_05.jpg')}}" alt="@lang('website.altitle.c-slide-1')" />
-    <div class="slider-caption slide2-cp slider-caption-high">
-      <div class="row">
-        <div class="inner-caption float-right text-right mt-50">
-          <div class="text-center"> 
-            <h2 class="title-2 wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0" style="padding-right:40px">@lang('website-text.about_sez5_title')</h2>
-            <div class="wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2.5s" data-wow-offset="0" style="padding-right:40px">
-              <p class="">@lang('website-text.about_sez5_txt')</p> 
-              <a href="{{route('website-finishes')}}" title="@lang('website-text.about_sez5_txt')" class="button-type-1 white"></a> 
-            </div>
-          </div> 
-        </div>
-      </div>
+<div class="sez-banner fnt-small FWrap">
+  <img src="{{asset('img/website/chi-siamo/chisiamo_05.jpg')}}"  alt="@lang('website-text.about_sez5_title')">
+  <div class="inner" style="bottom: 10%; right: 10%; width: 600px;">
+    <h2 class="text-center text-white title-intro wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.6s" data-wow-offset="0">@lang('website-text.about_sez5_title')</h2>  
+    <div class="text-center text-white wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2.5s" data-wow-offset="0"> 
+      <a href="{{route('website-finishes')}}" title="@lang('website-text.about_sez5_txt')" class="button-type-1 white">@lang('website-text.about_sez5_txt')</a> 
     </div>
-  </li>
-</ul>
+  </div>
+</div>  
 
 <section class="product-counter2 p0 mb-50 mt-50 FWrap">
   <div class="row"> 
